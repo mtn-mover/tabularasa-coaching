@@ -39,10 +39,7 @@ export default function Header() {
             <Link href="/training-academy" className="text-trc-gray-700 hover:text-trc-blue-600 font-medium transition-colors">
               Training Academy
             </Link>
-            <Link
-              href="/contact"
-              className="px-6 py-2.5 bg-gradient-to-r from-trc-blue-600 to-trc-blue-700 text-white font-semibold rounded-lg hover:from-trc-blue-700 hover:to-trc-blue-800 transition-all duration-300 shadow-md hover:shadow-lg"
-            >
+            <Link href="/contact" className="text-trc-gray-700 hover:text-trc-blue-600 font-medium transition-colors">
               Contact Us
             </Link>
           </div>
@@ -97,7 +94,7 @@ export default function Header() {
               </Link>
               <Link
                 href="/contact"
-                className="px-6 py-2.5 bg-gradient-to-r from-trc-blue-600 to-trc-blue-700 text-white font-semibold rounded-lg text-center"
+                className="text-trc-gray-700 hover:text-trc-blue-600 font-medium transition-colors px-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact Us
