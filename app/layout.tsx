@@ -29,6 +29,27 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     siteName: 'Tabula Rasa Coaching',
+    images: [
+      {
+        url: '/images/logo.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Tabula Rasa Coaching - Karen Florence',
+      },
+    ],
+  },
+  icons: {
+    icon: [
+      { url: '/images/favicon.ico', type: 'image/x-icon' },
+      { url: '/images/favicon-96x96.png', type: 'image/png', sizes: '96x96' },
+      { url: '/images/favicon.svg', type: 'image/svg+xml' },
+    ],
+    apple: '/images/apple-touch-icon.png',
+  },
+  manifest: '/images/site.webmanifest',
+  appleWebApp: {
+    title: 'TR Coaching',
+    statusBarStyle: 'default',
   },
 };
 
