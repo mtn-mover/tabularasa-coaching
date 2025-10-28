@@ -6,8 +6,19 @@ export default function HomePage() {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative h-[600px] lg:h-[700px] overflow-hidden">
-        {/* Placeholder for background image */}
-        <div className="absolute inset-0 z-0 bg-gradient-to-br from-trc-blue-600 to-trc-blue-800"></div>
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/trc_coaching.png"
+            alt="Professional coaching session"
+            fill
+            sizes="100vw"
+            style={{
+              objectFit: 'cover',
+            }}
+            priority
+          />
+        </div>
 
         {/* Dark overlay at bottom */}
         <div className="absolute bottom-0 left-0 right-0 h-[40%] bg-gradient-to-t from-black/90 via-black/70 to-transparent z-10"></div>
