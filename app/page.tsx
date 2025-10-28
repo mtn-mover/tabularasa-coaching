@@ -283,80 +283,95 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-trc-gray-900 mb-6" style={{whiteSpace: 'normal', wordBreak: 'normal'}}>
-              What Clients Say
+              Recent Testimonials
             </h2>
-            <p className="text-xl text-trc-gray-600 max-w-3xl mx-auto leading-relaxed" style={{whiteSpace: 'normal', wordBreak: 'normal'}}>
-              Real experiences from clients who have transformed their lives through coaching
-            </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-gradient-to-br from-trc-blue-500 to-trc-blue-600 rounded-2xl p-8 shadow-lg text-white">
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-gradient-to-br from-trc-blue-500 to-trc-blue-600 rounded-2xl p-10 lg:p-12 shadow-lg text-white">
               <div className="mb-6">
-                <svg className="w-12 h-12 text-white/30" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-16 h-16 text-white/30" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                 </svg>
               </div>
-              <p className="text-lg leading-relaxed mb-4">
-                Karen's sessions were both therapeutic and practical. She helped me develop better leadership skills
-                and become a more effective leader. Simply put, Karen is a godsend who helped make me a better leader,
-                and for this I am forever grateful.
+              <p className="text-xl leading-relaxed mb-6">
+                Karen came highly recommended by a couple of my peers after I shared with them some professional challenges I was trying to overcome. Simply put, Karen is a godsend who helped make me a better leader and for this, I am forever grateful. I looked forward to each of our sessions which sometimes felt like therapy, but better. When I think of my experience with Karen "small changes can make a big difference" comes to mind. Highly recommend.
               </p>
-              <div className="border-t border-white/20 pt-4">
-                <p className="font-semibold">Senior Regional Sales Manager</p>
-                <p className="text-sm text-white/80">Cisco</p>
-              </div>
-            </div>
-
-            <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl p-8 shadow-lg text-white">
-              <div className="mb-6">
-                <svg className="w-12 h-12 text-white/30" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-                </svg>
-              </div>
-              <p className="text-lg leading-relaxed mb-4">
-                Karen is a game changer that has helped make me a better leader and person. She is organized,
-                thoughtful, and challenges you exactly when you need it. Her guidance has been instrumental
-                in my professional and personal growth.
-              </p>
-              <div className="border-t border-white/20 pt-4">
-                <p className="font-semibold">People Operations</p>
-                <p className="text-sm text-white/80">Google</p>
-              </div>
-            </div>
-
-            <div className="bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl p-8 shadow-lg text-white">
-              <div className="mb-6">
-                <svg className="w-12 h-12 text-white/30" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-                </svg>
-              </div>
-              <p className="text-lg leading-relaxed mb-4">
-                Karen has helped me immeasurably. She is a great coach. My consulting practice has tripled
-                within 6 months of starting to work with her. Her insights and support have been transformative
-                for my business.
-              </p>
-              <div className="border-t border-white/20 pt-4">
-                <p className="font-semibold">Founding Partner</p>
-                <p className="text-sm text-white/80">Sapiens Advisors</p>
+              <div className="border-t border-white/20 pt-6">
+                <p className="font-semibold text-lg">Nikki C., Senior Regional Sales Manager at Cisco</p>
               </div>
             </div>
           </div>
 
           {/* Client Organizations */}
-          <div className="mt-16 text-center">
-            <p className="text-sm font-semibold text-trc-gray-500 uppercase tracking-wide mb-6">
+          <div className="mt-20 text-center">
+            <p className="text-sm font-semibold text-trc-gray-500 uppercase tracking-wide mb-10">
               Trusted by Professionals From
             </p>
-            <div className="flex flex-wrap justify-center items-center gap-8 text-trc-gray-400">
-              <span className="text-lg font-medium">Cisco</span>
-              <span className="text-lg font-medium">Google</span>
-              <span className="text-lg font-medium">BBDO Worldwide</span>
-              <span className="text-lg font-medium">Ford</span>
-              <span className="text-lg font-medium">Samsara</span>
-              <span className="text-lg font-medium">Verkada</span>
-              <span className="text-lg font-medium">Disney Channel</span>
-              <span className="text-lg font-medium">State Farm</span>
+            <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8">
+              <div className="h-12 flex items-center">
+                <Image
+                  src="/images/Cisco-logo-4.png"
+                  alt="Cisco"
+                  width={120}
+                  height={48}
+                  className="h-10 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity"
+                />
+              </div>
+              <div className="h-12 flex items-center">
+                <Image
+                  src="/images/bbdo_worldwide_logo.jpeg"
+                  alt="BBDO Worldwide"
+                  width={120}
+                  height={48}
+                  className="h-10 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity"
+                />
+              </div>
+              <div className="h-12 flex items-center">
+                <Image
+                  src="/images/ford-logo.jpeg"
+                  alt="Ford"
+                  width={120}
+                  height={48}
+                  className="h-10 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity"
+                />
+              </div>
+              <div className="h-12 flex items-center">
+                <Image
+                  src="/images/samsara_logo.png"
+                  alt="Samsara"
+                  width={120}
+                  height={48}
+                  className="h-10 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity"
+                />
+              </div>
+              <div className="h-12 flex items-center">
+                <Image
+                  src="/images/Verkada-Logo-300x91.png"
+                  alt="Verkada"
+                  width={120}
+                  height={48}
+                  className="h-10 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity"
+                />
+              </div>
+              <div className="h-12 flex items-center">
+                <Image
+                  src="/images/disney-channel-logo.png"
+                  alt="Disney Channel"
+                  width={120}
+                  height={48}
+                  className="h-10 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity"
+                />
+              </div>
+              <div className="h-12 flex items-center">
+                <Image
+                  src="/images/statefarmlogo.png"
+                  alt="State Farm"
+                  width={120}
+                  height={48}
+                  className="h-10 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity"
+                />
+              </div>
             </div>
           </div>
         </div>
