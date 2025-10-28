@@ -229,7 +229,7 @@ export default function HomePage() {
       </section>
 
       {/* TRC Training Academy Section */}
-      <section className="py-20 lg:py-24 bg-white">
+      <section className="py-20 lg:py-24 bg-gradient-to-b from-white via-trc-blue-50/30 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Text */}
@@ -250,9 +250,9 @@ export default function HomePage() {
               </div>
               <Link
                 href="https://tabularasa-coaching.vercel.app/training-academy"
-                className="inline-block px-8 py-4 bg-gradient-to-r from-trc-blue-600 to-trc-blue-700 text-white font-bold rounded-lg hover:from-trc-blue-700 hover:to-trc-blue-800 hover:scale-105 transition-all duration-300 shadow-lg mb-6"
+                className="inline-block px-6 py-3 bg-trc-blue-600 text-white font-semibold rounded-lg hover:bg-trc-blue-700 transition-all duration-300 mb-6"
               >
-                Explore Training Academy
+                Explore Training Academy →
               </Link>
               <blockquote className="border-l-4 border-trc-blue-600 pl-6 py-2 italic text-lg text-trc-gray-600">
                 "Your wisdom, experience, and calling converge here." — Karen
@@ -261,7 +261,7 @@ export default function HomePage() {
 
             {/* Right Column - Image */}
             <div className="order-1 lg:order-2">
-              <div className="relative rounded-lg overflow-hidden shadow-2xl">
+              <div className="relative rounded-lg overflow-hidden shadow-lg">
                 <Image
                   src="/images/trc_coaching_3.png"
                   alt="TRC Training Academy"
