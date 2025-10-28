@@ -315,97 +315,62 @@ export default function HomePage() {
           </div>
 
           {/* Client Organizations */}
-          <div className="text-center">
+          <div className="text-center overflow-x-auto">
             <p className="text-sm font-semibold text-trc-gray-500 uppercase tracking-wide mb-12">
               Trusted by Professionals From
             </p>
-            <div className="flex flex-wrap justify-center items-center gap-x-16 gap-y-10">
-              <div className="flex items-center">
-                <Image
-                  src="/images/Cisco-logo-4.png"
-                  alt="Cisco"
-                  width={160}
-                  height={64}
-                  className="h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-                />
-              </div>
-              <div className="flex items-center">
-                <Image
-                  src="/images/bbdo_worldwide_logo.jpeg"
-                  alt="BBDO Worldwide"
-                  width={160}
-                  height={64}
-                  className="h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-                />
-              </div>
-              <div className="flex items-center">
-                <Image
-                  src="/images/ford-logo.jpeg"
-                  alt="Ford"
-                  width={160}
-                  height={64}
-                  className="h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-                />
-              </div>
-              <div className="flex items-center">
-                <Image
-                  src="/images/samsara_logo.png"
-                  alt="Samsara"
-                  width={160}
-                  height={64}
-                  className="h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-                />
-              </div>
-              <div className="flex items-center">
-                <Image
-                  src="/images/Verkada-Logo-300x91.png"
-                  alt="Verkada"
-                  width={160}
-                  height={64}
-                  className="h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-                />
-              </div>
-              <div className="flex items-center">
-                <Image
-                  src="/images/disney-channel-logo.png"
-                  alt="Disney Channel"
-                  width={160}
-                  height={64}
-                  className="h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-                />
-              </div>
-              <div className="flex items-center">
-                <Image
-                  src="/images/statefarmlogo.png"
-                  alt="State Farm"
-                  width={160}
-                  height={64}
-                  className="h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-                />
-              </div>
+            <div className="flex justify-center items-center gap-x-12 lg:gap-x-16 min-w-max mx-auto px-4">
+              <Image
+                src="/images/Cisco-logo-4.png"
+                alt="Cisco"
+                width={160}
+                height={64}
+                className="h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+              />
+              <Image
+                src="/images/bbdo_worldwide_logo.jpeg"
+                alt="BBDO Worldwide"
+                width={160}
+                height={64}
+                className="h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+              />
+              <Image
+                src="/images/ford-logo.jpeg"
+                alt="Ford"
+                width={160}
+                height={64}
+                className="h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+              />
+              <Image
+                src="/images/samsara_logo.png"
+                alt="Samsara"
+                width={160}
+                height={64}
+                className="h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+              />
+              <Image
+                src="/images/Verkada-Logo-300x91.png"
+                alt="Verkada"
+                width={160}
+                height={64}
+                className="h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+              />
+              <Image
+                src="/images/disney-channel-logo.png"
+                alt="Disney Channel"
+                width={160}
+                height={64}
+                className="h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+              />
+              <Image
+                src="/images/statefarmlogo.png"
+                alt="State Farm"
+                width={160}
+                height={64}
+                className="h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+              />
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Training Academy Teaser - MINIMAL */}
-      <section className="py-12 bg-white border-t border-gray-200">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h3 className="text-2xl font-bold text-trc-gray-900 mb-4" style={{whiteSpace: 'normal', wordBreak: 'normal'}}>
-            Interested in Becoming a Coach?
-          </h3>
-          <p className="text-lg text-trc-gray-600 mb-6 max-w-2xl mx-auto">
-            Karen Florence also leads the TRC Training Academy, where she trains the next generation
-            of professional coaches.
-          </p>
-          <a
-            href="https://www.trctrainingacademy.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-6 py-3 bg-trc-gray-200 text-trc-gray-800 font-semibold rounded-lg hover:bg-trc-gray-300 transition-all duration-300"
-          >
-            Visit TRC Training Academy →
-          </a>
         </div>
       </section>
 
