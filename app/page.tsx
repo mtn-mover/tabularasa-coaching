@@ -43,7 +43,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="order-1 lg:order-2">
-              <h2 className="text-4xl font-bold text-trc-gray-900 mb-6">Your Coach: Karen Florence</h2>
+              <h3 className="text-2xl font-bold text-trc-gray-900 mb-6">Your Coach: Karen Florence</h3>
               <div className="space-y-4 text-lg text-trc-gray-700 leading-relaxed">
                 <p className="font-semibold text-trc-blue-600">
                   CPC (Certified Professional Coach)<br />
@@ -78,8 +78,10 @@ export default function HomePage() {
       <section className="py-12 lg:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-trc-gray-900 mb-6">My Coaching Philosophy</h2>
-            <p className="text-lg text-trc-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <h2 className="text-4xl font-bold text-trc-gray-900 mb-6" style={{whiteSpace: 'normal', wordBreak: 'normal'}}>
+              My Coaching Philosophy
+            </h2>
+            <p className="text-lg text-trc-gray-600 max-w-3xl mx-auto leading-relaxed" style={{whiteSpace: 'normal', wordBreak: 'normal', width: '100%'}}>
               True transformation happens when we address both the technical skills and the adaptive mindsets
               that drive sustainable change.
             </p>
@@ -95,7 +97,7 @@ export default function HomePage() {
               <h3 className="text-2xl font-bold text-trc-gray-900 mb-4 text-center">
                 Technical + Adaptive
               </h3>
-              <p className="text-lg text-trc-gray-600 leading-relaxed text-center">
+              <p className="text-lg text-trc-gray-600 leading-relaxed text-center" style={{whiteSpace: 'normal', wordBreak: 'normal'}}>
                 Combining practical skills with deep adaptive work ensures that changes stick and growth continues
                 long after our sessions end.
               </p>
@@ -110,7 +112,7 @@ export default function HomePage() {
               <h3 className="text-2xl font-bold text-trc-gray-900 mb-4 text-center">
                 Resilience & Development
               </h3>
-              <p className="text-lg text-trc-gray-600 leading-relaxed text-center">
+              <p className="text-lg text-trc-gray-600 leading-relaxed text-center" style={{whiteSpace: 'normal', wordBreak: 'normal'}}>
                 Your experiences have shaped you, but they don't define your future. We build on your inherent
                 resilience to create new possibilities.
               </p>
@@ -125,7 +127,7 @@ export default function HomePage() {
               <h3 className="text-2xl font-bold text-trc-gray-900 mb-4 text-center">
                 Sustainable Change
               </h3>
-              <p className="text-lg text-trc-gray-600 leading-relaxed text-center">
+              <p className="text-lg text-trc-gray-600 leading-relaxed text-center" style={{whiteSpace: 'normal', wordBreak: 'normal'}}>
                 Real transformation isn't about quick fixes. It's about creating lasting change through
                 understanding and integration.
               </p>
@@ -250,10 +252,10 @@ export default function HomePage() {
       <section id="testimonials" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-trc-gray-900 mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold text-trc-gray-900 mb-6" style={{whiteSpace: 'normal', wordBreak: 'normal'}}>
               What Clients Say
             </h2>
-            <p className="text-xl text-trc-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-trc-gray-600 max-w-3xl mx-auto leading-relaxed" style={{whiteSpace: 'normal', wordBreak: 'normal'}}>
               Real experiences from clients who have transformed their lives through coaching
             </p>
           </div>
@@ -333,7 +335,7 @@ export default function HomePage() {
       {/* Training Academy Teaser - MINIMAL */}
       <section className="py-12 bg-white border-t border-gray-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h3 className="text-2xl font-bold text-trc-gray-900 mb-4">
+          <h3 className="text-2xl font-bold text-trc-gray-900 mb-4" style={{whiteSpace: 'normal', wordBreak: 'normal'}}>
             Interested in Becoming a Coach?
           </h3>
           <p className="text-lg text-trc-gray-600 mb-6 max-w-2xl mx-auto">
@@ -358,7 +360,7 @@ export default function HomePage() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>
+            <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.8)', whiteSpace: 'normal', wordBreak: 'normal'}}>
               Ready to Begin Your Transformation?
             </h2>
             <p className="text-xl lg:text-2xl text-white max-w-4xl mx-auto mb-8 leading-relaxed" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.8)'}}>
