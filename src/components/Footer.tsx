@@ -8,8 +8,8 @@ export default function Footer() {
           {/* About */}
           <div>
             <h3 className="text-xl font-bold mb-4 text-white">Tabula Rasa Coaching</h3>
-            <p className="text-white/90 leading-relaxed">
-              Where the Technical and the Adaptive Come Together to Create Sustainable Change
+            <p className="text-white leading-relaxed">
+              Tabula Rasa Coaching Training Academy (TRC Training Academy), spearheaded by the experienced and acclaimed Karen Florence, a certified professional coach (CPC), certified professional recovery and wellness coach (CPRWC), and professional coach (PC). Discover a transformative journey in our comprehensive coach training programs, empowering you to excel in the art of coaching.
             </p>
           </div>
 
