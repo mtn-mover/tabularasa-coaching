@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+/* Global Typography System */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.7;
+  color: #1f2937;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+
+/* Typography Scale */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem !important;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2rem !important;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 1.5rem !important;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+p {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+  color: #374151;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem !important;
+  }
+  h2 {
+    font-size: 1.5rem !important;
+  }
+  h3 {
+    font-size: 1.25rem !important;
+  }
+}
+
+/* Section Spacing */
+section {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+@media (min-width: 1024px) {
+  section {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+}
+
+/* Card Styling */
+.card {
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+  transform: translateY(-4px);
+}
+
+@theme {
+  /* Modern Professional Blues */
+  --color-trc-blue-50: #f0f4ff;
+  --color-trc-blue-100: #e0e7ff;
+  --color-trc-blue-200: #c7d2fe;
+  --color-trc-blue-300: #a5b4fc;
+  --color-trc-blue-400: #818cf8;
+  --color-trc-blue-500: #6366f1;
+  --color-trc-blue-600: #4f46e5;
+  --color-trc-blue-700: #4338ca;
+  --color-trc-blue-800: #3730a3;
+  --color-trc-blue-900: #312e81;
+
+  /* Warm Accent Colors */
+  --color-trc-gold-50: #fffbf3;
+  --color-trc-gold-100: #fef3e2;
+  --color-trc-gold-200: #fde8c9;
+  --color-trc-gold-300: #fbd4a1;
+  --color-trc-gold-400: #f8b66d;
+  --color-trc-gold-500: #f59e0b;
+  --color-trc-gold-600: #d97706;
+  --color-trc-gold-700: #b45309;
+  --color-trc-gold-800: #92400e;
+  --color-trc-gold-900: #78350f;
+
+  /* Neutral Grays */
+  --color-trc-gray-50: #fafafa;
+  --color-trc-gray-100: #f4f4f5;
+  --color-trc-gray-200: #e4e4e7;
+  --color-trc-gray-300: #d4d4d8;
+  --color-trc-gray-400: #a1a1aa;
+  --color-trc-gray-500: #71717a;
+  --color-trc-gray-600: #52525b;
+  --color-trc-gray-700: #3f3f46;
+  --color-trc-gray-800: #27272a;
+  --color-trc-gray-900: #18181b;
+
+  /* Professional Orange */
+  --color-orange-50: #fff7ed;
+  --color-orange-100: #ffedd5;
+  --color-orange-500: #f97316;
+  --color-orange-600: #ea580c;
+  --color-orange-700: #c2410c;
+
+  /* Teal */
+  --color-teal-50: #f0fdfa;
+  --color-teal-100: #ccfbf1;
+  --color-teal-500: #14b8a6;
+  --color-teal-600: #0d9488;
+}
