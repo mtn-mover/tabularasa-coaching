@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 
 export default function Header() {
@@ -11,9 +12,18 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
-            <span className="text-2xl font-bold text-trc-blue-600">Tabula Rasa Coaching</span>
-          </Link>
+          <div className="flex items-center">
+            <Link href="/" className="flex items-center py-1">
+              <Image
+                src="/images/logo.jpg"
+                alt="Tabula Rasa Coaching"
+                width={220}
+                height={90}
+                className="h-18 w-auto"
+                priority
+              />
+            </Link>
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
