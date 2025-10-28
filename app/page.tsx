@@ -243,18 +243,20 @@ export default function HomePage() {
               <h3 className="text-2xl font-bold text-trc-gray-900 mb-6">
                 Transform Lives From Anywhere
               </h3>
-              <div className="space-y-4 text-lg text-trc-gray-700 leading-relaxed mb-8">
+              <div className="text-lg text-trc-gray-700 leading-relaxed mb-8">
                 <p>
                   Join our global community of professional coaches making a difference. Our program equips you with the tools and techniques to build your coaching practice, enhance your leadership skills, or experience deep personal growth—all through our proven remote coaching methodology.
                 </p>
               </div>
-              <Link
-                href="https://tabularasa-coaching.vercel.app/training-academy"
-                className="inline-block px-6 py-3 bg-trc-blue-600 text-white font-semibold rounded-lg hover:bg-trc-blue-700 transition-all duration-300 mb-6"
-              >
-                Explore Training Academy →
-              </Link>
-              <blockquote className="border-l-4 border-trc-blue-600 pl-6 py-2 italic text-lg text-trc-gray-600">
+              <div className="mb-8">
+                <Link
+                  href="https://tabularasa-coaching.vercel.app/training-academy"
+                  className="inline-block px-6 py-3 bg-trc-blue-600 text-white font-semibold rounded-lg hover:bg-trc-blue-700 transition-all duration-300"
+                >
+                  Explore Training Academy →
+                </Link>
+              </div>
+              <blockquote className="border-l-4 border-trc-blue-600 pl-6 py-2 italic text-lg text-trc-gray-600 mt-0">
                 "Your wisdom, experience, and calling converge here." — Karen
               </blockquote>
             </div>
