@@ -114,18 +114,30 @@ export default function HomePage() {
                   <svg className="w-5 h-5 text-trc-blue-600 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-base text-trc-gray-700">Career transitions and advancement</span>
+                  <span className="text-base text-trc-gray-700">Executive presence and influence</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-trc-blue-600 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-base text-trc-gray-700">Work-life integration strategies</span>
+                  <span className="text-base text-trc-gray-700">Organizational coaching and team development</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-trc-blue-600 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-base text-trc-gray-700">Strategic thinking and decision-making</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-trc-blue-600 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-base text-trc-gray-700">Managing complex workplace dynamics</span>
                 </li>
               </ul>
             </div>
 
-            {/* Professional Development */}
+            {/* Career Coaching */}
             <div className="bg-gradient-to-br from-orange-50 to-orange-100/50 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-orange-100">
               <div className="w-20 h-20 bg-gradient-to-br from-trc-gold-500 to-trc-gold-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                 <svg className="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -133,39 +145,51 @@ export default function HomePage() {
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-trc-gray-900 mb-4 text-center">
-                Professional Development
+                Career Coaching
               </h3>
               <ul className="space-y-2.5 text-left">
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-orange-600 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-base text-trc-gray-700">Career advancement strategies</span>
+                  <span className="text-base text-trc-gray-700">Career transitions and reinvention</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-orange-600 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-base text-trc-gray-700">Performance enhancement</span>
+                  <span className="text-base text-trc-gray-700">Professional advancement strategies</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-orange-600 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-base text-trc-gray-700">Navigating workplace challenges</span>
+                  <span className="text-base text-trc-gray-700">Job search and interview preparation</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-orange-600 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-base text-trc-gray-700">Personal branding and networking</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-orange-600 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-base text-trc-gray-700">Career clarity and goal setting</span>
                 </li>
               </ul>
             </div>
 
-            {/* Personal Transformation */}
+            {/* Personal Coaching */}
             <div className="bg-gradient-to-br from-teal-50 to-teal-100/50 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-teal-100">
               <div className="w-20 h-20 bg-gradient-to-br from-teal-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                 <svg className="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-trc-gray-900 mb-4 text-center">
-                Personal Transformation
+                Personal Coaching
               </h3>
               <ul className="space-y-2.5 text-left">
                 <li className="flex items-start">
@@ -185,6 +209,18 @@ export default function HomePage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <span className="text-base text-trc-gray-700">Personal growth and fulfillment</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-teal-600 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-base text-trc-gray-700">Work-life balance and integration</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-teal-600 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-base text-trc-gray-700">Building resilience and self-awareness</span>
                 </li>
               </ul>
             </div>
