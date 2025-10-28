@@ -373,7 +373,7 @@ export default function HomePage() {
                 className="h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
               />
               <Image
-                src="/images/statefarmlogo.png"
+                src="/images/statefarm_logo.png"
                 alt="State Farm"
                 width={160}
                 height={64}
