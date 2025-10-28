@@ -225,6 +225,16 @@ export default function HomePage() {
               </ul>
             </div>
           </div>
+
+          {/* CTA Button */}
+          <div className="text-center mt-16">
+            <Link
+              href="/contact"
+              className="inline-block px-8 py-4 bg-trc-blue-600 text-white font-semibold text-lg rounded-lg hover:bg-trc-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
+              Schedule a Free Consultation
+            </Link>
+          </div>
         </div>
       </section>
 
