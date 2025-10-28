@@ -44,23 +44,37 @@ export default function HomePage() {
       {/* My Approach Section */}
       <section id="about" className="py-12 lg:py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-trc-gray-900 mb-8 text-center" style={{whiteSpace: 'normal', wordBreak: 'normal'}}>
-              My Approach
-            </h2>
-            <div className="space-y-6 text-lg text-trc-gray-700 leading-relaxed">
-              <p>
-                I believe in the resiliency of the human spirit. Human Beings can rise above the circumstances of their birth and overcome great trauma and hardship to become whole and resourceful contributors to our planet. Why some people soar because of their experiences and others get stuck for a lifetime has been the prevailing area of study of my life's journey, and informs the work I do with my clients.
-              </p>
-              <p>
-                The question is not "What is wrong with me?", the question is "What happened to me? And how has that shaped my life?". The answer to this question influences every day of your life, both personally and professionally.
-              </p>
-              <p>
-                The behavior we are experiencing today is always linked back to an experience in our past. My work is to help my clients discover that link, re-examine the beliefs that they have created, and evaluate if this behavior enhances their lives or creates a barrier to the life they want to live today.
-              </p>
-              <p>
-                I create a warm, safe, non-judgmental space to explore these important questions.
-              </p>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <div className="relative rounded-lg overflow-hidden shadow-lg">
+                <Image
+                  src="/images/trc_coaching_2.png"
+                  alt="Professional coaching session"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto object-cover"
+                  priority
+                />
+              </div>
+            </div>
+            <div className="order-1 lg:order-2">
+              <h2 className="text-4xl font-bold text-trc-gray-900 mb-8" style={{whiteSpace: 'normal', wordBreak: 'normal'}}>
+                My Approach
+              </h2>
+              <div className="space-y-6 text-lg text-trc-gray-700 leading-relaxed">
+                <p>
+                  I believe in the resiliency of the human spirit. Human Beings can rise above the circumstances of their birth and overcome great trauma and hardship to become whole and resourceful contributors to our planet. Why some people soar because of their experiences and others get stuck for a lifetime has been the prevailing area of study of my life's journey, and informs the work I do with my clients.
+                </p>
+                <p>
+                  The question is not "What is wrong with me?", the question is "What happened to me? And how has that shaped my life?". The answer to this question influences every day of your life, both personally and professionally.
+                </p>
+                <p>
+                  The behavior we are experiencing today is always linked back to an experience in our past. My work is to help my clients discover that link, re-examine the beliefs that they have created, and evaluate if this behavior enhances their lives or creates a barrier to the life they want to live today.
+                </p>
+                <p>
+                  I create a warm, safe, non-judgmental space to explore these important questions.
+                </p>
+              </div>
             </div>
           </div>
         </div>
