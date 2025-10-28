@@ -81,7 +81,7 @@ export default function HomePage() {
       </section>
 
       {/* Coaching Services Section */}
-      <section id="services" className="py-20 lg:py-24 bg-gradient-to-b from-white via-trc-blue-50/30 to-white">
+      <section id="services" className="py-20 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-trc-gray-900 mb-6">
@@ -229,7 +229,7 @@ export default function HomePage() {
       </section>
 
       {/* TRC Training Academy Section */}
-      <section className="py-20 lg:py-24 bg-gradient-to-b from-white via-trc-blue-50/30 to-white">
+      <section className="py-20 lg:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Text */}
@@ -279,7 +279,7 @@ export default function HomePage() {
       </section>
 
       {/* Testimonials Section */}
-      <section id="testimonials" className="py-20 bg-gray-50">
+      <section id="testimonials" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-trc-gray-900 mb-6" style={{whiteSpace: 'normal', wordBreak: 'normal'}}>
@@ -287,89 +287,100 @@ export default function HomePage() {
             </h2>
           </div>
 
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-br from-trc-blue-500 to-trc-blue-600 rounded-2xl p-10 lg:p-12 shadow-lg text-white">
-              <div className="mb-6">
-                <svg className="w-16 h-16 text-white/30" fill="currentColor" viewBox="0 0 24 24">
+          <div className="max-w-5xl mx-auto mb-20">
+            <div className="bg-white border-2 border-trc-blue-200 rounded-2xl p-10 lg:p-14 shadow-xl relative">
+              <div className="absolute -top-8 left-10">
+                <svg className="w-16 h-16 text-trc-blue-500" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                 </svg>
               </div>
-              <p className="text-xl leading-relaxed mb-6">
-                Karen came highly recommended by a couple of my peers after I shared with them some professional challenges I was trying to overcome. Simply put, Karen is a godsend who helped make me a better leader and for this, I am forever grateful. I looked forward to each of our sessions which sometimes felt like therapy, but better. When I think of my experience with Karen "small changes can make a big difference" comes to mind. Highly recommend.
-              </p>
-              <div className="border-t border-white/20 pt-6">
-                <p className="font-semibold text-lg">Nikki C., Senior Regional Sales Manager at Cisco</p>
+              <div className="mt-4">
+                <p className="text-xl lg:text-2xl text-trc-gray-700 leading-relaxed mb-8 font-light italic">
+                  Karen came highly recommended by a couple of my peers after I shared with them some professional challenges I was trying to overcome.
+                </p>
+                <p className="text-xl lg:text-2xl text-trc-gray-700 leading-relaxed mb-8 font-light italic">
+                  Simply put, Karen is a godsend who helped make me a better leader and for this, I am forever grateful. I looked forward to each of our sessions which sometimes felt like therapy, but better.
+                </p>
+                <p className="text-xl lg:text-2xl text-trc-gray-700 leading-relaxed mb-8 font-light italic">
+                  When I think of my experience with Karen <span className="font-semibold text-trc-blue-600">"small changes can make a big difference"</span> comes to mind. Highly recommend.
+                </p>
+                <div className="flex items-center mt-10 pt-8 border-t-2 border-trc-gray-200">
+                  <div>
+                    <p className="text-lg font-bold text-trc-gray-900">Nikki C.</p>
+                    <p className="text-base text-trc-gray-600">Senior Regional Sales Manager at Cisco</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
           {/* Client Organizations */}
-          <div className="mt-20 text-center">
-            <p className="text-sm font-semibold text-trc-gray-500 uppercase tracking-wide mb-10">
+          <div className="text-center">
+            <p className="text-sm font-semibold text-trc-gray-500 uppercase tracking-wide mb-12">
               Trusted by Professionals From
             </p>
-            <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8">
-              <div className="h-12 flex items-center">
+            <div className="flex flex-wrap justify-center items-center gap-x-16 gap-y-10">
+              <div className="flex items-center">
                 <Image
                   src="/images/Cisco-logo-4.png"
                   alt="Cisco"
-                  width={120}
-                  height={48}
-                  className="h-10 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity"
+                  width={160}
+                  height={64}
+                  className="h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
                 />
               </div>
-              <div className="h-12 flex items-center">
+              <div className="flex items-center">
                 <Image
                   src="/images/bbdo_worldwide_logo.jpeg"
                   alt="BBDO Worldwide"
-                  width={120}
-                  height={48}
-                  className="h-10 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity"
+                  width={160}
+                  height={64}
+                  className="h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
                 />
               </div>
-              <div className="h-12 flex items-center">
+              <div className="flex items-center">
                 <Image
                   src="/images/ford-logo.jpeg"
                   alt="Ford"
-                  width={120}
-                  height={48}
-                  className="h-10 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity"
+                  width={160}
+                  height={64}
+                  className="h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
                 />
               </div>
-              <div className="h-12 flex items-center">
+              <div className="flex items-center">
                 <Image
                   src="/images/samsara_logo.png"
                   alt="Samsara"
-                  width={120}
-                  height={48}
-                  className="h-10 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity"
+                  width={160}
+                  height={64}
+                  className="h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
                 />
               </div>
-              <div className="h-12 flex items-center">
+              <div className="flex items-center">
                 <Image
                   src="/images/Verkada-Logo-300x91.png"
                   alt="Verkada"
-                  width={120}
-                  height={48}
-                  className="h-10 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity"
+                  width={160}
+                  height={64}
+                  className="h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
                 />
               </div>
-              <div className="h-12 flex items-center">
+              <div className="flex items-center">
                 <Image
                   src="/images/disney-channel-logo.png"
                   alt="Disney Channel"
-                  width={120}
-                  height={48}
-                  className="h-10 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity"
+                  width={160}
+                  height={64}
+                  className="h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
                 />
               </div>
-              <div className="h-12 flex items-center">
+              <div className="flex items-center">
                 <Image
                   src="/images/statefarmlogo.png"
                   alt="State Farm"
-                  width={120}
-                  height={48}
-                  className="h-10 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity"
+                  width={160}
+                  height={64}
+                  className="h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
                 />
               </div>
             </div>
