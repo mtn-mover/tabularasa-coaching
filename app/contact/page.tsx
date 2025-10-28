@@ -46,9 +46,9 @@ export default function ContactPage() {
       {/* Header Section */}
       <section className="bg-gradient-to-r from-trc-blue-600 to-trc-blue-700 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl lg:text-5xl font-bold mb-4">Schedule a Free Consultation</h1>
+          <h1 className="text-4xl lg:text-5xl font-bold mb-4">Book a Free Sample Session</h1>
           <p className="text-xl lg:text-2xl text-white/90 max-w-3xl mx-auto">
-            Let's explore how coaching can support your journey toward sustainable change
+            Experience Karen's coaching approach firsthand and discover how it can support your journey
           </p>
         </div>
       </section>
@@ -66,7 +66,7 @@ export default function ContactPage() {
                 </div>
                 <h2 className="text-3xl font-bold text-trc-gray-900 mb-4">Thank You!</h2>
                 <p className="text-lg text-trc-gray-600 mb-6">
-                  Your consultation request has been received. Karen will be in touch with you within 24-48 hours.
+                  Your sample session request has been received. Karen will be in touch with you within 24-48 hours to schedule your session.
                 </p>
                 <button
                   onClick={() => setSubmitStatus('idle')}
@@ -181,7 +181,7 @@ export default function ContactPage() {
                     disabled={isSubmitting}
                     className="w-full px-8 py-4 bg-gradient-to-r from-trc-blue-600 to-trc-blue-700 text-white font-bold rounded-lg hover:from-trc-blue-700 hover:to-trc-blue-800 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 shadow-lg hover:shadow-xl text-lg"
                   >
-                    {isSubmitting ? 'Submitting...' : 'Book Your Free Consultation'}
+                    {isSubmitting ? 'Submitting...' : 'Book Your Free Sample Session'}
                   </button>
                 </div>
 

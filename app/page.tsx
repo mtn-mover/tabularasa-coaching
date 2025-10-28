@@ -16,14 +16,14 @@ export default function HomePage() {
         <div className="absolute bottom-0 left-0 right-0 z-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8 lg:pb-12">
             <div className="text-left lg:text-center">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-4 tracking-tight leading-tight" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>
+              <p className="text-xl lg:text-2xl text-white mb-4 tracking-wide" style={{textShadow: '1px 1px 2px rgba(0,0,0,0.6)'}}>
                 Tabula Rasa Coaching
-              </h1>
-              <p className="text-xl lg:text-2xl text-white mb-4 leading-relaxed max-w-3xl lg:mx-auto" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.8)'}}>
-                Where the Technical and the Adaptive Come Together to Create Sustainable Change
               </p>
-              <p className="text-lg lg:text-xl text-white/90 leading-relaxed max-w-3xl lg:mx-auto" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.8)'}}>
-                Professional 1:1 coaching that honors your journey and creates lasting transformation
+              <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-4 tracking-tight leading-tight" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>
+                Where the Technical and the Adaptive Come Together to Create Sustainable Change
+              </h1>
+              <p className="text-xl lg:text-2xl text-white leading-relaxed max-w-3xl lg:mx-auto" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.8)'}}>
+                Professional 1:1 coaching with Karen Florence, CPC, CPRWC
               </p>
             </div>
           </div>
@@ -50,17 +50,23 @@ export default function HomePage() {
                   CPRWC (Certified Professional Recovery and Wellness Coach)<br />
                   PC (Professional Coach)
                 </p>
-                <p>
-                  "I believe in the resiliency of the human spirit. The question is not 'What is wrong with me?',
-                  the question is 'What happened to me? And how has that shaped my life?'"
+                <p className="text-xl font-medium text-trc-gray-900 italic">
+                  "I believe in the resiliency of the human spirit."
                 </p>
                 <p>
-                  With expertise spanning Executive Coaching, Career Coaching, and Life Coaching, Karen specializes
-                  in creating sustainable change through the integration of technical and adaptive approaches.
+                  Karen's approach centers on human resilience and the belief that individuals can overcome trauma
+                  and hardship to become whole contributors. Her central question shifts the paradigm from
+                  "What is wrong with me?" to "What happened to me? And how has that shaped my life?"
                 </p>
                 <p>
-                  Karen's coaching philosophy centers on the deep connection between past experiences and current
-                  behavior, focusing on resilience and human development to facilitate lasting transformation.
+                  Her methodology involves creating a safe, non-judgmental space to help clients discover links
+                  between past experiences and current behaviors, then evaluate whether these patterns enhance
+                  or obstruct their desired life.
+                </p>
+                <p>
+                  Karen combines technical expertise with adaptive strategies to create sustainable personal
+                  and professional change. With an office in Malvern, PA and remote options available, she
+                  works with clients worldwide.
                 </p>
               </div>
             </div>
@@ -260,11 +266,13 @@ export default function HomePage() {
                 </svg>
               </div>
               <p className="text-lg leading-relaxed mb-4">
-                Karen came highly recommended... Simply put, Karen is a godsend who helped make me a better leader
-                and for this, I am forever grateful... 'small changes can make a big difference' comes to mind.
+                Karen's sessions were both therapeutic and practical. She helped me develop better leadership skills
+                and become a more effective leader. Simply put, Karen is a godsend who helped make me a better leader,
+                and for this I am forever grateful.
               </p>
               <div className="border-t border-white/20 pt-4">
-                <p className="font-semibold">Client Testimonial</p>
+                <p className="font-semibold">Senior Regional Sales Manager</p>
+                <p className="text-sm text-white/80">Cisco</p>
               </div>
             </div>
 
@@ -276,10 +284,12 @@ export default function HomePage() {
               </div>
               <p className="text-lg leading-relaxed mb-4">
                 Karen is a game changer that has helped make me a better leader and person. She is organized,
-                thoughtful, and challenges you exactly when you need it.
+                thoughtful, and challenges you exactly when you need it. Her guidance has been instrumental
+                in my professional and personal growth.
               </p>
               <div className="border-t border-white/20 pt-4">
-                <p className="font-semibold">Client Testimonial</p>
+                <p className="font-semibold">People Operations</p>
+                <p className="text-sm text-white/80">Google</p>
               </div>
             </div>
 
@@ -291,11 +301,30 @@ export default function HomePage() {
               </div>
               <p className="text-lg leading-relaxed mb-4">
                 Karen has helped me immeasurably. She is a great coach. My consulting practice has tripled
-                within 6 months of starting to work with her.
+                within 6 months of starting to work with her. Her insights and support have been transformative
+                for my business.
               </p>
               <div className="border-t border-white/20 pt-4">
-                <p className="font-semibold">Client Testimonial</p>
+                <p className="font-semibold">Founding Partner</p>
+                <p className="text-sm text-white/80">Sapiens Advisors</p>
               </div>
+            </div>
+          </div>
+
+          {/* Client Organizations */}
+          <div className="mt-16 text-center">
+            <p className="text-sm font-semibold text-trc-gray-500 uppercase tracking-wide mb-6">
+              Trusted by Professionals From
+            </p>
+            <div className="flex flex-wrap justify-center items-center gap-8 text-trc-gray-400">
+              <span className="text-lg font-medium">Cisco</span>
+              <span className="text-lg font-medium">Google</span>
+              <span className="text-lg font-medium">BBDO Worldwide</span>
+              <span className="text-lg font-medium">Ford</span>
+              <span className="text-lg font-medium">Samsara</span>
+              <span className="text-lg font-medium">Verkada</span>
+              <span className="text-lg font-medium">Disney Channel</span>
+              <span className="text-lg font-medium">State Farm</span>
             </div>
           </div>
         </div>
@@ -340,7 +369,7 @@ export default function HomePage() {
               href="/contact"
               className="inline-block px-8 py-4 bg-white text-trc-blue-600 font-bold rounded-lg hover:bg-gray-100 hover:scale-105 transition-all duration-300 shadow-xl text-lg"
             >
-              Schedule a Free Consultation
+              Book a Free Sample Session
             </Link>
           </div>
         </div>
