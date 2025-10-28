@@ -386,10 +386,22 @@ export default function HomePage() {
 
       {/* Final CTA Section */}
       <section className="relative py-32">
-        <div className="absolute inset-0 z-0 bg-gradient-to-br from-trc-blue-700 to-trc-blue-900"></div>
-        <div className="absolute inset-0 bg-black/40"></div>
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/trc_coaching_cta.png"
+            alt="Coaching session background"
+            fill
+            sizes="100vw"
+            style={{
+              objectFit: 'cover',
+            }}
+            priority
+          />
+        </div>
+        <div className="absolute inset-0 bg-black/50 z-10"></div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.8)', whiteSpace: 'normal', wordBreak: 'normal'}}>
               Ready to Begin Your Transformation?
