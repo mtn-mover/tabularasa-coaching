@@ -27,20 +27,23 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/#about" className="text-trc-gray-700 hover:text-trc-blue-600 font-medium transition-colors">
-              About Karen
+            <Link href="/" className="text-trc-gray-700 hover:text-trc-blue-600 font-medium transition-colors">
+              Home
             </Link>
-            <Link href="/#services" className="text-trc-gray-700 hover:text-trc-blue-600 font-medium transition-colors">
+            <Link href="/about-me" className="text-trc-gray-700 hover:text-trc-blue-600 font-medium transition-colors">
+              About Me
+            </Link>
+            <Link href="/services" className="text-trc-gray-700 hover:text-trc-blue-600 font-medium transition-colors">
               Services
             </Link>
-            <Link href="/#testimonials" className="text-trc-gray-700 hover:text-trc-blue-600 font-medium transition-colors">
-              Testimonials
+            <Link href="/training-academy" className="text-trc-gray-700 hover:text-trc-blue-600 font-medium transition-colors">
+              Training Academy
             </Link>
             <Link
               href="/contact"
               className="px-6 py-2.5 bg-gradient-to-r from-trc-blue-600 to-trc-blue-700 text-white font-semibold rounded-lg hover:from-trc-blue-700 hover:to-trc-blue-800 transition-all duration-300 shadow-md hover:shadow-lg"
             >
-              Contact
+              Contact Us
             </Link>
           </div>
 
@@ -65,32 +68,39 @@ export default function Header() {
           <div className="md:hidden py-4 border-t border-gray-200">
             <div className="flex flex-col space-y-4">
               <Link
-                href="/#about"
+                href="/"
                 className="text-trc-gray-700 hover:text-trc-blue-600 font-medium transition-colors px-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                About Karen
+                Home
               </Link>
               <Link
-                href="/#services"
+                href="/about-me"
+                className="text-trc-gray-700 hover:text-trc-blue-600 font-medium transition-colors px-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                About Me
+              </Link>
+              <Link
+                href="/services"
                 className="text-trc-gray-700 hover:text-trc-blue-600 font-medium transition-colors px-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Services
               </Link>
               <Link
-                href="/#testimonials"
+                href="/training-academy"
                 className="text-trc-gray-700 hover:text-trc-blue-600 font-medium transition-colors px-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Testimonials
+                Training Academy
               </Link>
               <Link
                 href="/contact"
                 className="px-6 py-2.5 bg-gradient-to-r from-trc-blue-600 to-trc-blue-700 text-white font-semibold rounded-lg text-center"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Contact
+                Contact Us
               </Link>
             </div>
           </div>

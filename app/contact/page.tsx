@@ -46,7 +46,7 @@ export default function ContactPage() {
       {/* Header Section */}
       <section className="bg-gradient-to-r from-trc-blue-600 to-trc-blue-700 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl lg:text-5xl font-bold mb-4">Book a Free Sample Session</h1>
+          <h1 className="text-4xl lg:text-5xl font-bold mb-4">Contact Us</h1>
           <p className="text-xl lg:text-2xl text-white/90 max-w-3xl mx-auto">
             Experience Karen's coaching approach firsthand and discover how it can support your journey
           </p>
