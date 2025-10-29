@@ -1,15 +1,15 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
-    service: '',
+    interest: '',
     message: '',
-    goals: '',
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -27,9 +27,8 @@ export default function ContactPage() {
         name: '',
         email: '',
         phone: '',
-        service: '',
+        interest: '',
         message: '',
-        goals: '',
       });
     }, 1000);
   };
@@ -42,21 +41,25 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
-      {/* Header Section */}
-      <section className="bg-gradient-to-r from-trc-blue-600 to-trc-blue-700 text-white py-16">
+    <div className="min-h-screen bg-white">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-br from-trc-blue-700 via-trc-blue-800 to-trc-blue-900 text-white py-20 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl lg:text-5xl font-bold mb-4">Contact Us</h1>
-          <p className="text-xl lg:text-2xl text-white/90 max-w-3xl mx-auto">
-            Experience Karen's coaching approach firsthand and discover how it can support your journey
+          <h1 className="text-5xl lg:text-6xl font-bold mb-6">Begin Your Journey</h1>
+          <p className="text-xl lg:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+            Take the first step toward discovering your soul's work. We're here to guide you on your transformation path.
           </p>
         </div>
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-16">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-trc-gray-900 mb-8 text-center">
+              Schedule Your Consultation
+            </h2>
+
             {submitStatus === 'success' ? (
               <div className="text-center py-8">
                 <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -64,22 +67,22 @@ export default function ContactPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <h2 className="text-3xl font-bold text-trc-gray-900 mb-4">Thank You!</h2>
+                <h3 className="text-3xl font-bold text-trc-gray-900 mb-4">Thank You!</h3>
                 <p className="text-lg text-trc-gray-600 mb-6">
-                  Your sample session request has been received. Karen will be in touch with you within 24-48 hours to schedule your session.
+                  Your message has been received. We'll be in touch with you shortly to schedule your consultation.
                 </p>
                 <button
                   onClick={() => setSubmitStatus('idle')}
                   className="px-6 py-3 bg-trc-blue-600 text-white font-semibold rounded-lg hover:bg-trc-blue-700 transition-colors"
                 >
-                  Submit Another Request
+                  Send Another Message
                 </button>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-semibold text-trc-gray-900 mb-2">
-                    Name *
+                    Full Name *
                   </label>
                   <input
                     type="text"
@@ -88,14 +91,14 @@ export default function ContactPage() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-trc-blue-500 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-trc-blue-500 focus:border-transparent transition-all text-trc-gray-900"
                     placeholder="Your full name"
                   />
                 </div>
 
                 <div>
                   <label htmlFor="email" className="block text-sm font-semibold text-trc-gray-900 mb-2">
-                    Email *
+                    Email Address *
                   </label>
                   <input
                     type="email"
@@ -104,14 +107,14 @@ export default function ContactPage() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-trc-blue-500 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-trc-blue-500 focus:border-transparent transition-all text-trc-gray-900"
                     placeholder="your.email@example.com"
                   />
                 </div>
 
                 <div>
                   <label htmlFor="phone" className="block text-sm font-semibold text-trc-gray-900 mb-2">
-                    Phone (optional)
+                    Phone Number
                   </label>
                   <input
                     type="tel"
@@ -119,59 +122,42 @@ export default function ContactPage() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-trc-blue-500 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-trc-blue-500 focus:border-transparent transition-all text-trc-gray-900"
                     placeholder="+1 (555) 123-4567"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="service" className="block text-sm font-semibold text-trc-gray-900 mb-2">
-                    Service Interest *
+                  <label htmlFor="interest" className="block text-sm font-semibold text-trc-gray-900 mb-2">
+                    Interest *
                   </label>
                   <select
-                    id="service"
-                    name="service"
+                    id="interest"
+                    name="interest"
                     required
-                    value={formData.service}
+                    value={formData.interest}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-trc-blue-500 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-trc-blue-500 focus:border-transparent transition-all text-trc-gray-900"
                   >
-                    <option value="">Select a service...</option>
-                    <option value="executive-coaching">Executive Coaching</option>
-                    <option value="professional-development">Professional Development</option>
-                    <option value="personal-transformation">Personal Transformation</option>
-                    <option value="not-sure">Not Sure Yet</option>
+                    <option value="">Select an option...</option>
+                    <option value="professional-coach-certification">Professional Coach Certification</option>
+                    <option value="general-consultation">General Consultation</option>
+                    <option value="more-information">More Information</option>
                   </select>
                 </div>
 
                 <div>
-                  <label htmlFor="goals" className="block text-sm font-semibold text-trc-gray-900 mb-2">
-                    What are you hoping to achieve through coaching? *
-                  </label>
-                  <textarea
-                    id="goals"
-                    name="goals"
-                    required
-                    rows={4}
-                    value={formData.goals}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-trc-blue-500 focus:border-transparent transition-all"
-                    placeholder="Share your goals, challenges, or what brings you to coaching..."
-                  />
-                </div>
-
-                <div>
                   <label htmlFor="message" className="block text-sm font-semibold text-trc-gray-900 mb-2">
-                    Additional Message (optional)
+                    Tell Us About Your Journey
                   </label>
                   <textarea
                     id="message"
                     name="message"
-                    rows={4}
+                    rows={6}
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-trc-blue-500 focus:border-transparent transition-all"
-                    placeholder="Any additional information you'd like to share..."
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-trc-blue-500 focus:border-transparent transition-all text-trc-gray-900"
+                    placeholder="Share your goals, challenges, or what brings you here..."
                   />
                 </div>
 
@@ -181,46 +167,67 @@ export default function ContactPage() {
                     disabled={isSubmitting}
                     className="w-full px-8 py-4 bg-gradient-to-r from-trc-blue-600 to-trc-blue-700 text-white font-bold rounded-lg hover:from-trc-blue-700 hover:to-trc-blue-800 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 shadow-lg hover:shadow-xl text-lg"
                   >
-                    {isSubmitting ? 'Submitting...' : 'Book Your Free Sample Session'}
+                    {isSubmitting ? 'Sending...' : 'Send Message'}
                   </button>
                 </div>
 
-                <p className="text-sm text-trc-gray-500 text-center pt-2">
-                  By submitting this form, you agree to be contacted by Tabula Rasa Coaching regarding your consultation.
+                <p className="text-xs text-trc-gray-500 text-center pt-2">
+                  This site is protected by reCAPTCHA and the Google{' '}
+                  <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-trc-blue-600 hover:underline">
+                    Privacy Policy
+                  </a>{' '}
+                  and{' '}
+                  <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer" className="text-trc-blue-600 hover:underline">
+                    Terms of Service
+                  </a>{' '}
+                  apply.
                 </p>
               </form>
             )}
           </div>
+        </div>
+      </section>
 
-          {/* Contact Information */}
-          <div className="mt-12 grid md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-xl p-6 shadow-md">
+      {/* Contact Information Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-trc-gray-900 mb-6">
+              Ready to Begin Your Transformation?
+            </h2>
+            <p className="text-xl text-trc-gray-600 leading-relaxed max-w-3xl mx-auto">
+              Contact us directly via email or phone to schedule your consultation and take the first step toward discovering your soul's work.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-gradient-to-br from-trc-blue-50 to-trc-blue-100/50 rounded-xl p-8 border border-trc-blue-200">
               <div className="flex items-start">
-                <div className="w-12 h-12 bg-trc-blue-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                  <svg className="w-6 h-6 text-trc-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="w-12 h-12 bg-trc-blue-600 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                  <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-trc-gray-900 mb-1">Email</h3>
-                  <a href="mailto:karen@tabularasacoaching.com" className="text-trc-blue-600 hover:text-trc-blue-700">
+                  <h3 className="font-bold text-trc-gray-900 mb-2 text-lg">Email</h3>
+                  <a href="mailto:karen@tabularasacoaching.com" className="text-trc-blue-600 hover:text-trc-blue-700 font-medium">
                     karen@tabularasacoaching.com
                   </a>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white rounded-xl p-6 shadow-md">
+            <div className="bg-gradient-to-br from-trc-blue-50 to-trc-blue-100/50 rounded-xl p-8 border border-trc-blue-200">
               <div className="flex items-start">
-                <div className="w-12 h-12 bg-trc-blue-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                  <svg className="w-6 h-6 text-trc-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="w-12 h-12 bg-trc-blue-600 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                  <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-trc-gray-900 mb-1">Phone</h3>
-                  <a href="tel:+16102284145" className="text-trc-blue-600 hover:text-trc-blue-700">
-                    +1 (610) 228-4145
+                  <h3 className="font-bold text-trc-gray-900 mb-2 text-lg">Phone</h3>
+                  <a href="tel:+16102284145" className="text-trc-blue-600 hover:text-trc-blue-700 font-medium">
+                    +1 610 228 4145
                   </a>
                 </div>
               </div>
