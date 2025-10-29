@@ -10,15 +10,32 @@ export default function AboutMePage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-trc-blue-600 via-trc-blue-700 to-trc-blue-800 text-white py-24 lg:py-32 overflow-hidden">
+      <section className="relative text-white py-24 lg:py-32 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/karen_hero.jpg"
+            alt="Karen Florence"
+            fill
+            sizes="100vw"
+            style={{
+              objectFit: 'cover',
+            }}
+            priority
+          />
+        </div>
+
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-br from-trc-blue-900/70 via-trc-blue-800/60 to-trc-blue-900/70 z-10"></div>
+
         {/* Decorative dot pattern overlay */}
-        <div className="absolute inset-0 opacity-10" style={{
+        <div className="absolute inset-0 opacity-10 z-20" style={{
           backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)',
           backgroundSize: '40px 40px'
         }}></div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl lg:text-6xl font-bold mb-6 text-white" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
+        <div className="relative z-30 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-5xl lg:text-6xl font-bold mb-6 text-white" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.5)'}}>
             Meet Karen Florence
           </h1>
           <p className="text-xl lg:text-2xl text-white max-w-4xl mx-auto leading-relaxed" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.8)'}}>
@@ -30,22 +47,6 @@ export default function AboutMePage() {
       {/* Main About Section */}
       <section className="py-20 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Image Section - Full Width */}
-          <div className="max-w-4xl mx-auto mb-16">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <Image
-                src="/images/karen_new.jpg"
-                alt="Karen Florence - Professional Coach"
-                width={800}
-                height={600}
-                className="w-full h-auto object-cover"
-                priority
-              />
-              {/* Gradient overlay effect */}
-              <div className="absolute inset-0 bg-gradient-to-t from-trc-blue-900/20 to-transparent"></div>
-            </div>
-          </div>
-
           {/* Content Section - Full Width */}
           <div className="max-w-5xl mx-auto">
             <div className="space-y-6 text-lg text-trc-gray-700 leading-relaxed">
