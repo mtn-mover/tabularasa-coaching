@@ -56,9 +56,12 @@ export default function ContactPage() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-trc-gray-900 mb-8 text-center">
+            <h2 className="text-3xl lg:text-4xl font-bold text-trc-gray-900 mb-4 text-center">
               Schedule Your Consultation
             </h2>
+            <p className="text-lg text-trc-gray-600 mb-8 text-center">
+              Complete the form below and we'll connect with you within 24 hours to discuss your coaching journey.
+            </p>
 
             {submitStatus === 'success' ? (
               <div className="text-center py-8">
