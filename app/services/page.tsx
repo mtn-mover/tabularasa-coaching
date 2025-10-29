@@ -10,12 +10,39 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-trc-blue-600 to-trc-blue-700 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl lg:text-5xl font-bold mb-6">Coaching Services</h1>
-          <p className="text-xl lg:text-2xl text-white/90 max-w-3xl mx-auto">
-            Tailored coaching services designed to meet you where you are and support you in achieving your goals
-          </p>
+      <section className="relative h-[600px] lg:h-[700px] overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/trc_service_hero.jpg"
+            alt="Coaching Services"
+            fill
+            sizes="100vw"
+            style={{
+              objectFit: 'cover',
+            }}
+            priority
+          />
+        </div>
+
+        {/* Dark overlay at bottom */}
+        <div className="absolute bottom-0 left-0 right-0 h-[40%] bg-gradient-to-t from-black/90 via-black/70 to-transparent z-10"></div>
+
+        {/* Content */}
+        <div className="absolute bottom-0 left-0 right-0 z-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-4 lg:pb-6">
+            <div className="text-left lg:text-center">
+              <p className="text-xl lg:text-2xl text-white mb-4 tracking-wide" style={{textShadow: '1px 1px 2px rgba(0,0,0,0.6)'}}>
+                Tabula Rasa Coaching
+              </p>
+              <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-4 tracking-tight leading-tight" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>
+                Coaching Services
+              </h1>
+              <p className="text-xl lg:text-2xl text-white leading-relaxed max-w-3xl lg:mx-auto" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.8)'}}>
+                Tailored coaching services designed to meet you where you are and support you in achieving your goals
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
