@@ -48,7 +48,7 @@ export default function HomePage() {
             <div className="order-2 lg:order-1">
               <div className="relative rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src="/images/trc_coaching_2.png"
+                  src="/images/trc_coaching_4.png"
                   alt="Professional coaching session"
                   width={600}
                   height={400}
