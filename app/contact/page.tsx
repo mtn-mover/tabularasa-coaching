@@ -192,19 +192,33 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Information Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-20 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/trc_coaching_cta.png"
+            alt="Contact background"
+            fill
+            sizes="100vw"
+            style={{
+              objectFit: 'cover',
+            }}
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/60 to-black/70 z-10"></div>
+
+        <div className="relative z-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-trc-gray-900 mb-6">
+            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>
               Ready to Begin Your Transformation?
             </h2>
-            <p className="text-xl text-trc-gray-600 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-xl lg:text-2xl text-white leading-relaxed max-w-3xl mx-auto" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.8)'}}>
               Contact us directly via email or phone to schedule your consultation and take the first step toward discovering your soul's work.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
-            <div className="bg-white rounded-xl p-8 shadow-md border border-gray-200">
+            <div className="bg-white rounded-xl p-8 shadow-xl">
               <div className="flex items-start">
                 <div className="w-10 h-10 flex items-center justify-center mr-4 flex-shrink-0">
                   <svg className="w-6 h-6 text-trc-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -220,7 +234,7 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow-md border border-gray-200">
+            <div className="bg-white rounded-xl p-8 shadow-xl">
               <div className="flex items-start">
                 <div className="w-10 h-10 flex items-center justify-center mr-4 flex-shrink-0">
                   <svg className="w-6 h-6 text-trc-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
