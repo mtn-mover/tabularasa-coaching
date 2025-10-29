@@ -217,17 +217,17 @@ export default function ContactPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-            <div className="bg-white rounded-lg p-6 shadow-md">
-              <h3 className="text-sm font-semibold text-trc-gray-900 mb-2">Email</h3>
-              <a href="mailto:karen@tabularasacoaching.com" className="text-trc-blue-600 hover:underline">
+          <div className="grid md:grid-cols-2 gap-6 max-w-xl mx-auto">
+            <div className="bg-white rounded-lg p-5 shadow-md text-center">
+              <h3 className="text-base font-semibold text-trc-gray-900 mb-2">Email</h3>
+              <a href="mailto:karen@tabularasacoaching.com" className="text-trc-blue-600 hover:underline text-base">
                 karen@tabularasacoaching.com
               </a>
             </div>
 
-            <div className="bg-white rounded-lg p-6 shadow-md">
-              <h3 className="text-sm font-semibold text-trc-gray-900 mb-2">Phone</h3>
-              <a href="tel:+16102284145" className="text-trc-blue-600 hover:underline">
+            <div className="bg-white rounded-lg p-5 shadow-md text-center">
+              <h3 className="text-base font-semibold text-trc-gray-900 mb-2">Phone</h3>
+              <a href="tel:+16102284145" className="text-trc-blue-600 hover:underline text-base">
                 +1 610 228 4145
               </a>
             </div>
