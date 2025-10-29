@@ -21,7 +21,7 @@ export default function AboutMePage() {
           <h1 className="text-5xl lg:text-6xl font-bold mb-6 text-white" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
             Meet Karen Florence
           </h1>
-          <p className="text-2xl lg:text-3xl text-white max-w-4xl mx-auto font-semibold" style={{textShadow: '1px 1px 2px rgba(0,0,0,0.2)'}}>
+          <p className="text-xl lg:text-2xl text-white max-w-4xl mx-auto leading-relaxed" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.8)'}}>
             Master Coach, Founder of TRC Training Academy, and Your Guide to Transformational Impact
           </p>
         </div>
@@ -169,11 +169,11 @@ export default function AboutMePage() {
           </div>
 
           <blockquote className="text-2xl lg:text-3xl text-white font-light italic leading-relaxed mb-8" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.3)'}}>
-            When I think of my experience with Karen, "small changes can make a big difference" comes to mind. She helped me discover that the behavior we experience today is always linked back to an experience in our past. Through her guidance, I learned to re-examine the beliefs I had created and evaluate whether they enhance my life or create barriers to the life I want to live.
+            I believe that the second half of life holds our greatest potential for impact. When we combine our accumulated wisdom with our soul's true calling, we don't just change careers—we transform lives, starting with our own.
           </blockquote>
 
           <p className="text-xl text-white/90 font-semibold">
-            — Client Testimonial
+            — Karen Florence, Founder of TRC Training Academy
           </p>
         </div>
       </section>
