@@ -104,103 +104,35 @@ export default function TrainingAcademyPage() {
         </div>
       </section>
 
-      {/* Distinction Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="bg-white rounded-xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-trc-gray-900 mb-4">
-                1:1 Coaching Services
-              </h3>
-              <p className="text-lg text-trc-gray-600 leading-relaxed mb-4">
-                Work directly with Karen Florence for personalized coaching in:
-              </p>
-              <ul className="space-y-2 text-trc-gray-700">
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-trc-blue-600 mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  Executive Coaching
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-trc-blue-600 mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  Professional Development
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-trc-blue-600 mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  Personal Transformation
-                </li>
-              </ul>
-              <div className="mt-6">
-                <Link
-                  href="/services"
-                  className="text-trc-blue-600 font-semibold hover:text-trc-blue-700"
-                >
-                  Learn More →
-                </Link>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-trc-gray-900 mb-4">
-                Coach Training Programs
-              </h3>
-              <p className="text-lg text-trc-gray-600 leading-relaxed mb-4">
-                Join TRC Training Academy for comprehensive coach certification:
-              </p>
-              <ul className="space-y-2 text-trc-gray-700">
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-orange-600 mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  Professional Coach Certification
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-orange-600 mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  Advanced Training Programs
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-orange-600 mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  Mentorship and Supervision
-                </li>
-              </ul>
-              <div className="mt-6">
-                <a
-                  href="https://www.trctrainingacademy.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-orange-600 font-semibold hover:text-orange-700"
-                >
-                  Visit Academy →
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-trc-blue-600 to-trc-blue-700">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-            Questions About Our Programs?
+      <section className="relative py-32 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/trc_coaching_cta.png"
+            alt="Coaching session background"
+            fill
+            sizes="100vw"
+            style={{
+              objectFit: 'cover',
+            }}
+            priority
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/50 to-black/60 z-10"></div>
+
+        <div className="relative z-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>
+            Ready to Begin Your<br />Transformation Journey?
           </h2>
-          <p className="text-xl text-white/90 mb-8">
-            Contact us to learn more about 1:1 coaching or coach training opportunities.
+          <p className="text-xl lg:text-2xl text-white max-w-3xl mx-auto mb-10 leading-relaxed" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.8)'}}>
+            Take the first step toward lasting change. Schedule a free consultation to discover how coaching can help you achieve your goals.
           </p>
           <Link
             href="/contact"
-            className="inline-block px-8 py-4 bg-white text-trc-blue-600 font-bold rounded-lg hover:bg-gray-100 hover:scale-105 transition-all duration-300 shadow-xl text-lg"
+            className="inline-block px-10 py-5 bg-white text-trc-blue-600 font-bold text-lg rounded-lg hover:bg-gray-100 hover:scale-105 transition-all duration-300 shadow-2xl"
           >
-            Get in Touch
+            Schedule a Free Consultation
           </Link>
         </div>
       </section>
