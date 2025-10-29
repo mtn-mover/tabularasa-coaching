@@ -51,30 +51,38 @@ export default function AboutMePage() {
             <div className="space-y-6">
               <div className="space-y-6 text-lg text-trc-gray-700 leading-relaxed">
                 <p>
-                  Karen Florence is a <span className="font-semibold text-trc-blue-600">Certified Professional Coach (CPC)</span>, <span className="font-semibold text-trc-blue-600">Certified Professional Recovery and Wellness Coach (CPRWC)</span>, and <span className="font-semibold text-trc-blue-600">Professional Coach (PC)</span> with a passion for helping individuals unlock their full potential and create lasting transformation.
-                </p>
-
-                <p>
-                  With years of experience coaching executives, professionals, and individuals through significant life transitions, Karen has developed a unique approach that bridges the gap between technical skills and adaptive mindsets—where sustainable change truly happens.
+                  I am a <span className="font-semibold text-trc-blue-600">Certified Professional Coach</span> and founder of <span className="font-semibold text-trc-blue-600">Tabula Rasa Coaching</span>, a coaching firm that specializes in International Executive Transformational Coaching for individuals as well as organizations. I am also a Psychosynthesis Counselor with both a virtual and in-person private practice in Malvern, Pennsylvania.
                 </p>
 
                 {/* Highlighted Quote Box */}
                 <div className="bg-gradient-to-br from-trc-blue-50 to-trc-blue-100/50 border-l-4 border-trc-blue-600 rounded-lg p-6 my-8">
                   <p className="text-xl italic text-trc-gray-800 font-medium">
-                    "I believe in the resiliency of the human spirit. Human Beings can rise above the circumstances of their birth and overcome great trauma and hardship to become whole and resourceful contributors to our planet."
+                    "I am passionate about helping others answer the questions that matter."
                   </p>
                 </div>
 
                 <p>
-                  Karen's coaching philosophy centers on a fundamental shift in perspective: moving from "What is wrong with me?" to "What happened to me? And how has that shaped my life?" This paradigm shift creates space for deep exploration, understanding, and ultimately, transformation.
+                  I was trained at Coaching for Transformation, a coaching school accredited by the International Coaching Federation. I hold certificates in Executive Career Coaching, Organizational Coaching, Transformational Coaching, and Spirituality Based Coaching. I hold a certificate in Immunity to Change from Harvard University and Minds at Work. In addition I recently acquired a certificate for Executive Presence and Influence from Wharton School of Business at the University of Pennsylvania. Tabula Rasa Coaching offers coach training, education, and peer support to active coaches and coaches wishing to build their practices and broaden their skills and tools through classes, workshops, and one-on-one mentoring.
                 </p>
 
                 <p>
-                  Her methodology involves creating a warm, safe, non-judgmental space where clients can discover the links between past experiences and current behaviors, then evaluate whether these patterns enhance or obstruct their desired life. Through this process, clients develop resilience, self-awareness, and the tools needed for sustainable personal and professional growth.
+                  I am also an accredited recovery-to-wellness coach, working with people struggling with chronic illness and addictions. I served as SVP and global head of marketing for Foundation for Recovery to Wellness, a coaching school based in London for 2 years.
                 </p>
 
                 <p>
-                  As the founder of <span className="font-semibold text-trc-blue-600">TRC Training Academy</span>, Karen also trains the next generation of professional coaches, sharing her expertise and passion for transformational coaching with aspiring practitioners worldwide.
+                  As an International Executive Transformational Coach, I work with every level of the organizational chart in companies around the world – coaching, mentoring, and consulting. I am a Cisco certified coach and have worked with over 100 Cisco leaders around the globe. Other companies I work with include Cisco-Meraki, Samsara, Google, Pierce Global Promotions, Pinnacle Foods, GPIC, Jaguar Land Rover, The Disney Channel, BBDO Russia, New York Life, The St. Croix Foundation, Volvo Italia, Prudential Life, Intel and The Learning Channel among others, including several startups in Silicon Valley.
+                </p>
+
+                <p>
+                  With a background of over 20 years in luxury interior design sales to the trade, I reinvented myself to follow my passion of helping others see what is possible in their lives. While working full time, I returned to school in New York City to become a Certified Professional Coach. After graduation I continued to expand my coaching tool kit by adding career coaching, organizational coaching and spirituality coaching to my practice. Within my first year of practice, I took my practice international with clients in the UK, Russia, France, Turkey, Canada, and Italy. Today I work with clients all over the globe, including the Middle East.
+                </p>
+
+                <p>
+                  I am a long-time student of neuroscience and behavioral psychology. I earned a certificate from Queensland University, Australia, in the Science of Everyday Thinking. Understanding how the brain works is influential in removing many blocks and obstacles for clients and teams as they move forward.
+                </p>
+
+                <p>
+                  In addition, I am a Reiki Master/Teacher/Practitioner. I am Hospice certified to provide end of life palliative care with an emphasis on cancer patients. I am an experienced workshop facilitator, public speaker, columnist and radio show host.
                 </p>
               </div>
             </div>
