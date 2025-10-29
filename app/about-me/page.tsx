@@ -10,11 +10,11 @@ export default function AboutMePage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative h-[600px] lg:h-[700px] text-white overflow-hidden">
+      <section className="relative h-[600px] lg:h-[700px] overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/karen_hero.jpg"
+            src="/images/karen_hero2.jpg"
             alt="Karen Florence"
             fill
             sizes="100vw"
@@ -25,23 +25,20 @@ export default function AboutMePage() {
           />
         </div>
 
-        {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-br from-trc-blue-900/70 via-trc-blue-800/60 to-trc-blue-900/70 z-10"></div>
+        {/* Dark overlay at bottom */}
+        <div className="absolute bottom-0 left-0 right-0 h-[40%] bg-gradient-to-t from-black/90 via-black/70 to-transparent z-10"></div>
 
-        {/* Decorative dot pattern overlay */}
-        <div className="absolute inset-0 opacity-10 z-20" style={{
-          backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)',
-          backgroundSize: '40px 40px'
-        }}></div>
-
-        <div className="relative z-30 h-full flex items-center">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
-            <h1 className="text-5xl lg:text-6xl font-bold mb-6 text-white" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.5)'}}>
-              Meet Karen Florence
-            </h1>
-            <p className="text-xl lg:text-2xl text-white max-w-4xl mx-auto leading-relaxed" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.8)'}}>
-              Master Coach, Founder of TRC Training Academy, and Your Guide to Transformational Impact
-            </p>
+        {/* Content */}
+        <div className="absolute bottom-0 left-0 right-0 z-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8 lg:pb-12">
+            <div className="text-left lg:text-center">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-4 tracking-tight leading-tight" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>
+                Meet Karen Florence
+              </h1>
+              <p className="text-xl lg:text-2xl text-white max-w-4xl lg:mx-auto leading-relaxed" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.8)'}}>
+                Master Coach, Founder of TRC Training Academy, and Your Guide to Transformational Impact
+              </p>
+            </div>
           </div>
         </div>
       </section>
