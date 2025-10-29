@@ -18,10 +18,10 @@ export default function AboutMePage() {
         }}></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl lg:text-6xl font-bold mb-6" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
+          <h1 className="text-5xl lg:text-6xl font-bold mb-6 text-white" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>
             Meet Karen Florence
           </h1>
-          <p className="text-2xl lg:text-3xl text-white/95 max-w-4xl mx-auto font-semibold" style={{textShadow: '1px 1px 2px rgba(0,0,0,0.2)'}}>
+          <p className="text-2xl lg:text-3xl text-white max-w-4xl mx-auto font-semibold" style={{textShadow: '1px 1px 2px rgba(0,0,0,0.2)'}}>
             Master Coach, Founder of TRC Training Academy, and Your Guide to Transformational Impact
           </p>
         </div>
