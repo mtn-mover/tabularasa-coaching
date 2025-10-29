@@ -137,39 +137,35 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Client Organizations */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-sm font-semibold text-trc-gray-500 uppercase tracking-wide mb-6">
-            Trusted by Professionals From
-          </p>
-          <div className="flex flex-wrap justify-center items-center gap-8 text-trc-gray-400">
-            <span className="text-lg font-medium">Cisco</span>
-            <span className="text-lg font-medium">Google</span>
-            <span className="text-lg font-medium">BBDO Worldwide</span>
-            <span className="text-lg font-medium">Ford</span>
-            <span className="text-lg font-medium">Samsara</span>
-            <span className="text-lg font-medium">Verkada</span>
-            <span className="text-lg font-medium">Disney Channel</span>
-            <span className="text-lg font-medium">State Farm</span>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-trc-blue-600 to-trc-blue-700">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-            Ready to Get Started?
+      <section className="relative py-32 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/trc_coaching_cta.png"
+            alt="Coaching session background"
+            fill
+            sizes="100vw"
+            style={{
+              objectFit: 'cover',
+            }}
+            priority
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/50 to-black/60 z-10"></div>
+
+        <div className="relative z-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>
+            Ready to Begin Your<br />Transformation Journey?
           </h2>
-          <p className="text-xl text-white/90 mb-8">
-            Book a free sample session to discover which coaching service is right for you.
+          <p className="text-xl lg:text-2xl text-white max-w-3xl mx-auto mb-10 leading-relaxed" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.8)'}}>
+            Take the first step toward lasting change. Schedule a free consultation to discover how coaching can help you achieve your goals.
           </p>
           <Link
             href="/contact"
-            className="inline-block px-8 py-4 bg-white text-trc-blue-600 font-bold rounded-lg hover:bg-gray-100 hover:scale-105 transition-all duration-300 shadow-xl text-lg"
+            className="inline-block px-10 py-5 bg-white text-trc-blue-600 font-bold text-lg rounded-lg hover:bg-gray-100 hover:scale-105 transition-all duration-300 shadow-2xl"
           >
-            Book a Free Sample Session
+            Schedule a Free Consultation
           </Link>
         </div>
       </section>
