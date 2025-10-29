@@ -170,7 +170,7 @@ export default function AboutMePage() {
             I believe that the second half of life holds our greatest potential for impact. When we combine our accumulated wisdom with our soul's true calling, we don't just change careers—we transform lives, starting with our own.
           </blockquote>
 
-          <p className="text-xl text-white/90 font-semibold">
+          <p className="text-xl text-white font-semibold">
             — Karen Florence, Founder of TRC Training Academy
           </p>
         </div>
