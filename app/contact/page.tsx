@@ -45,8 +45,8 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-trc-blue-700 via-trc-blue-800 to-trc-blue-900 text-white py-20 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl lg:text-6xl font-bold mb-6">Begin Your Journey</h1>
-          <p className="text-xl lg:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+          <h1 className="text-5xl lg:text-6xl font-bold mb-6 text-white">Begin Your Journey</h1>
+          <p className="text-xl lg:text-2xl text-white max-w-3xl mx-auto leading-relaxed">
             Take the first step toward discovering your soul's work. We're here to guide you on your transformation path.
           </p>
         </div>
