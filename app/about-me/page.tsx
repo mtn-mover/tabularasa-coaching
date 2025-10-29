@@ -10,7 +10,7 @@ export default function AboutMePage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative text-white py-24 lg:py-32 overflow-hidden">
+      <section className="relative h-[600px] lg:h-[700px] text-white overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -34,13 +34,15 @@ export default function AboutMePage() {
           backgroundSize: '40px 40px'
         }}></div>
 
-        <div className="relative z-30 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl lg:text-6xl font-bold mb-6 text-white" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.5)'}}>
-            Meet Karen Florence
-          </h1>
-          <p className="text-xl lg:text-2xl text-white max-w-4xl mx-auto leading-relaxed" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.8)'}}>
-            Master Coach, Founder of TRC Training Academy, and Your Guide to Transformational Impact
-          </p>
+        <div className="relative z-30 h-full flex items-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
+            <h1 className="text-5xl lg:text-6xl font-bold mb-6 text-white" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.5)'}}>
+              Meet Karen Florence
+            </h1>
+            <p className="text-xl lg:text-2xl text-white max-w-4xl mx-auto leading-relaxed" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.8)'}}>
+              Master Coach, Founder of TRC Training Academy, and Your Guide to Transformational Impact
+            </p>
+          </div>
         </div>
       </section>
 
