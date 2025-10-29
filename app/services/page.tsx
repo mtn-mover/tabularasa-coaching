@@ -66,9 +66,16 @@ export default function ServicesPage() {
                 </div>
               </div>
               <div className="order-1 lg:order-2">
-                {/* Image placeholder - will be added */}
-                <div className="bg-trc-blue-100 rounded-2xl h-[400px] lg:h-[500px] flex items-center justify-center">
-                  <p className="text-trc-gray-400 text-lg">Image: Organizational Coaching</p>
+                <div className="relative rounded-2xl overflow-hidden shadow-lg h-[400px] lg:h-[500px]">
+                  <Image
+                    src="/images/trc_service_corp.png"
+                    alt="Organizational/Corporate Coaching"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    style={{
+                      objectFit: 'cover',
+                    }}
+                  />
                 </div>
               </div>
             </div>
@@ -76,9 +83,16 @@ export default function ServicesPage() {
             {/* Psychosynthesis Counseling */}
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="order-1">
-                {/* Image placeholder - will be added */}
-                <div className="bg-trc-gold-100 rounded-2xl h-[400px] lg:h-[500px] flex items-center justify-center">
-                  <p className="text-trc-gray-400 text-lg">Image: Psychosynthesis Counseling</p>
+                <div className="relative rounded-2xl overflow-hidden shadow-lg h-[400px] lg:h-[500px]">
+                  <Image
+                    src="/images/trc_service_psyco.png"
+                    alt="Psychosynthesis Counseling"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    style={{
+                      objectFit: 'cover',
+                    }}
+                  />
                 </div>
               </div>
               <div className="order-2">
@@ -106,9 +120,16 @@ export default function ServicesPage() {
                 </div>
               </div>
               <div className="order-1 lg:order-2">
-                {/* Image placeholder - will be added */}
-                <div className="bg-teal-100 rounded-2xl h-[400px] lg:h-[500px] flex items-center justify-center">
-                  <p className="text-trc-gray-400 text-lg">Image: Personal Transformation</p>
+                <div className="relative rounded-2xl overflow-hidden shadow-lg h-[400px] lg:h-[500px]">
+                  <Image
+                    src="/images/trc_service_personal.png"
+                    alt="Personal Transformational Coaching"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    style={{
+                      objectFit: 'cover',
+                    }}
+                  />
                 </div>
               </div>
             </div>
