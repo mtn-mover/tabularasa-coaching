@@ -59,7 +59,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/20 mt-8 pt-8 text-center text-white/80">
+        <div className="border-t border-white/20 mt-8 pt-8 text-center text-white">
           <p>&copy; {new Date().getFullYear()} Tabula Rasa Coaching. All rights reserved.</p>
           <p className="mt-2 text-sm">
             Professional coaching services with Karen Florence, CPC, CPRWC
