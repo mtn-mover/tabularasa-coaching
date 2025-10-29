@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Coaching Services | Tabula Rasa Coaching',
@@ -21,128 +22,68 @@ export default function ServicesPage() {
       {/* Services Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Executive Coaching */}
-            <div className="bg-gradient-to-br from-trc-blue-50 to-trc-blue-100/50 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-trc-blue-100">
-              <div className="w-20 h-20 bg-gradient-to-br from-trc-blue-500 to-trc-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-                <svg className="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
+          <div className="space-y-24">
+            {/* Organizational/Corporate Coaching */}
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="order-2 lg:order-1">
+                <h2 className="text-3xl lg:text-4xl font-bold text-trc-gray-900 mb-6">
+                  Organizational/Corporate Coaching
+                </h2>
+                <div className="space-y-4 text-lg text-trc-gray-700 leading-relaxed">
+                  <p>
+                    My corporate clients include some of the largest tech companies on the planet, such as Cisco, Samsara, and Ford. By the time an organization offers executive coaching to their leaders, those leaders have demonstrated the ability to be excellent independent contributors, and most likely good managers. Think about what makes a great leader: good communication, great decision making, independently motivated, thoughtful about risk taking, the ability to get people to follow them, and many others. These attributes rely on a common denominator: behavior. How a leader shows up, how she/he listens to the team, engages with the team, develops, and supports the team, is all based on personal behavior. Business decisions, strategy, risk taking, and forward visioning and movement are also dependent upon personal behavior.
+                  </p>
+                  <p>
+                    In my 15 years of international executive leadership coaching, I have seen brilliant minds at work innovating and creating amazing processes and products. I have also seen brilliant minds create chaos within organizations. Not because they do not care about their teams, but because of their lack of self-awareness about what is driving their behavior. This is my area of expertise. In hindsight, we all know when we have handled a situation poorly. In my work with clients, I help clients recognize unhealthy reactions, identify what the triggers are that cause them, and then shift into a new way of responding. This is the kind of growth and development that can strengthen organizations and the people within them as they move forward to the next level.
+                  </p>
+                </div>
               </div>
-              <h2 className="text-2xl font-bold text-trc-gray-900 mb-4 text-center">
-                Executive Coaching
-              </h2>
-              <p className="text-lg text-trc-gray-600 mb-6 leading-relaxed text-center">
-                Elevate your leadership and achieve your professional goals with personalized executive coaching.
-              </p>
-              <ul className="space-y-2.5 text-left">
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-trc-blue-600 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-base text-trc-gray-700">Leadership development and effectiveness</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-trc-blue-600 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-base text-trc-gray-700">Career transitions and advancement</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-trc-blue-600 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-base text-trc-gray-700">Work-life integration strategies</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-trc-blue-600 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-base text-trc-gray-700">Strategic thinking and decision-making</span>
-                </li>
-              </ul>
+              <div className="order-1 lg:order-2">
+                {/* Image placeholder - will be added */}
+                <div className="bg-trc-blue-100 rounded-2xl h-[400px] lg:h-[500px] flex items-center justify-center">
+                  <p className="text-trc-gray-400 text-lg">Image: Organizational Coaching</p>
+                </div>
+              </div>
             </div>
 
-            {/* Professional Development */}
-            <div className="bg-gradient-to-br from-orange-50 to-orange-100/50 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-orange-100">
-              <div className="w-20 h-20 bg-gradient-to-br from-trc-gold-500 to-trc-gold-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-                <svg className="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                </svg>
+            {/* Psychosynthesis Counseling */}
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="order-1">
+                {/* Image placeholder - will be added */}
+                <div className="bg-trc-gold-100 rounded-2xl h-[400px] lg:h-[500px] flex items-center justify-center">
+                  <p className="text-trc-gray-400 text-lg">Image: Psychosynthesis Counseling</p>
+                </div>
               </div>
-              <h2 className="text-2xl font-bold text-trc-gray-900 mb-4 text-center">
-                Professional Development
-              </h2>
-              <p className="text-lg text-trc-gray-600 mb-6 leading-relaxed text-center">
-                Unlock your potential and advance your career with targeted professional development coaching.
-              </p>
-              <ul className="space-y-2.5 text-left">
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-orange-600 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-base text-trc-gray-700">Career advancement strategies</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-orange-600 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-base text-trc-gray-700">Performance enhancement</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-orange-600 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-base text-trc-gray-700">Navigating workplace challenges</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-orange-600 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-base text-trc-gray-700">Building confidence and presence</span>
-                </li>
-              </ul>
+              <div className="order-2">
+                <h2 className="text-3xl lg:text-4xl font-bold text-trc-gray-900 mb-6">
+                  Psychosynthesis Counseling
+                </h2>
+                <div className="space-y-4 text-lg text-trc-gray-700 leading-relaxed">
+                  <p>
+                    Psychosynthesis is a psychology of hope, with its eye not only on history, but also on a purposeful future giving individuals the capacity to reorient their lives in the direction of meaning and values. Psychosynthesis has also been described as a psychology of the Self, in that the realms of human experience also include matters of soul and spirit, alongside physical and emotional experiences and thoughts, and mental processes. In weekly, one-hour sessions, I aid my clients in exploring challenges on all levels in order to bring balance and satisfaction in their lives. Gaining personal perspective into their own personality helps my client to see the "why" of their behavior and opens the door to well-informed decision making and life choices.
+                  </p>
+                </div>
+              </div>
             </div>
 
-            {/* Personal Transformation */}
-            <div className="bg-gradient-to-br from-teal-50 to-teal-100/50 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-teal-100">
-              <div className="w-20 h-20 bg-gradient-to-br from-teal-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-                <svg className="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
+            {/* Personal Transformational Coaching */}
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="order-2 lg:order-1">
+                <h2 className="text-3xl lg:text-4xl font-bold text-trc-gray-900 mb-6">
+                  Personal Transformational Coaching
+                </h2>
+                <div className="space-y-4 text-lg text-trc-gray-700 leading-relaxed">
+                  <p>
+                    From the moment we take our first breath, we learn how to be in the world and the circumstances into which we are born. We are born into Earth School. Our challenge is to learn how to navigate our lives and circumstances in order to create the lives we want to live. Whether are we are born into affluence, poverty, or somewhere in between, no one gets out unscathed. The journey of our lives is filled with many bends and turns, many highs and lows, many hurts, and joys. We get the whole wonderful catastrophe whether we like it or not. In personal transformational coaching we embark on a journey of deep self-examination to transform your relationships, career, health, and spiritual life, so that you can begin to be aware of what you believe, how those beliefs influence how you show up in the world, and if your beliefs and behaviors enhance or detract from the life you want to live. When I work with clients, I offer explanations as to how we are hardwired to behave. My belief is, if we understand the way our brains are hardwired, we can let ourselves off the hook for many things we beat ourselves up over. This is a marvelous journey of self-discovery, which will boost your confidence, self-esteem, and life decision-making.
+                  </p>
+                </div>
               </div>
-              <h2 className="text-2xl font-bold text-trc-gray-900 mb-4 text-center">
-                Personal Transformation
-              </h2>
-              <p className="text-lg text-trc-gray-600 mb-6 leading-relaxed text-center">
-                Create meaningful personal change and discover new possibilities for your life.
-              </p>
-              <ul className="space-y-2.5 text-left">
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-teal-600 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-base text-trc-gray-700">Life transitions and major changes</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-teal-600 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-base text-trc-gray-700">Recovery and wellness coaching</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-teal-600 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-base text-trc-gray-700">Personal growth and fulfillment</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-teal-600 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-base text-trc-gray-700">Overcoming limiting beliefs</span>
-                </li>
-              </ul>
+              <div className="order-1 lg:order-2">
+                {/* Image placeholder - will be added */}
+                <div className="bg-teal-100 rounded-2xl h-[400px] lg:h-[500px] flex items-center justify-center">
+                  <p className="text-trc-gray-400 text-lg">Image: Personal Transformation</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
