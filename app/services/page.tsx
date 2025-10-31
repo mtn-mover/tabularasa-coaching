@@ -68,7 +68,7 @@ export default function ServicesPage() {
               <div className="order-1 lg:order-2">
                 <div className="relative rounded-2xl overflow-hidden shadow-lg h-[400px] lg:h-[500px]">
                   <Image
-                    src="/images/trc_service_corp.png"
+                    src="/images/trc_service_corp_a.png"
                     alt="Organizational/Corporate Coaching"
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
@@ -85,7 +85,7 @@ export default function ServicesPage() {
               <div className="order-1">
                 <div className="relative rounded-2xl overflow-hidden shadow-lg h-[400px] lg:h-[500px]">
                   <Image
-                    src="/images/trc_service_psyco.png"
+                    src="/images/trc_service_psyco_a.png"
                     alt="Psychosynthesis Counseling"
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
