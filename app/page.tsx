@@ -275,7 +275,7 @@ export default function HomePage() {
             <div className="order-1 lg:order-2">
               <div className="relative rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src="/images/trc_coaching_3.png"
+                  src="/images/trc_coaching_3a.png"
                   alt="TRC Training Academy"
                   width={600}
                   height={400}
