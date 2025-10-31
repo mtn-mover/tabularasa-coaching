@@ -9,7 +9,7 @@ export default function HomePage() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/trc_coaching.png"
+            src="/images/trc_coaching_2.png"
             alt="Professional coaching session"
             fill
             sizes="100vw"
