@@ -14,7 +14,7 @@ export default function ServicesPage() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/trc_service_hero.png"
+            src="/images/trc_service_hero_a.png"
             alt="Coaching Services"
             fill
             sizes="100vw"
